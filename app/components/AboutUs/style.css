@@ -1,0 +1,36 @@
+.about-us-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 22px;
+  margin-top: 2rem;
+  line-height: 4rem;
+  min-height: calc(100vh - 300px);
+}
+
+.jee-advanced-cnt {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.about-us-heading {
+  font-size: 32px;
+}
+
+/* for mobiles */
+@media screen and (max-width: 640px) {
+  .about-us-main {
+    gap: 1rem;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+
+  .about-us-heading {
+    font-size: 22px;
+  }
+}

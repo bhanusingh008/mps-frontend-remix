@@ -1,0 +1,45 @@
+.jee-main-cnt{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.jmain-title{
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--foreground-color);
+}
+
+.jmain-logo{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.jmain-para-heading{
+    font-size: 24px;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+}
+
+.jmain-table{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1280px;
+}
+
+.jmain-table thead th{
+    text-align: left;
+    padding:0.5rem;
+    color: white;
+    background-color: var(--foreground-color);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}

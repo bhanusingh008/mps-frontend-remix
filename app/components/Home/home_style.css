@@ -1,0 +1,22 @@
+.home-container{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.tabs-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.info-title{
+    background-color: var(--primary-color);
+    color: var(--foreground-color);
+}
+
+.info-card{
+    height: 500px;
+    width: 400px;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+}

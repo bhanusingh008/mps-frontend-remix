@@ -1,0 +1,31 @@
+.side-bar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 93%;
+    background-color: var(--foreground-color);
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.link-container a{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.link-container a:hover{
+    background-color: rgb(30, 41, 59, 0.8);
+}

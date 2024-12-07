@@ -1,0 +1,93 @@
+.notice-bg {
+  background-color: #ebebeb;
+}
+
+.notice-board {
+  color: var(--primary-color);
+  background-color: #ebebeb;
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.veritcal-line {
+  width: 8px;
+  border-radius: 8px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.notice-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 2rem;
+  background-color: #ebebeb;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.hero-papa-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-papa-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.notice-meta-data {
+  gap: 4rem;
+  margin-top: 40px;
+  font-size: 22px;
+  color: #3600a9;
+  font-weight: 900;
+  font-size: 34px;
+}
+
+.student-mentored {
+  font-size: 32px;
+}
+
+.experience-div {
+  font-weight: bold;
+}
+
+/* for some middle ground */
+@media screen and (max-width: 1200px) {
+  .notice-board {
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 24px;
+    padding: 2px;
+  }
+
+  .notice-container {
+    grid-template-columns: 1fr;
+    border-radius: 100px;
+  }
+
+  .notice-meta-data {
+    gap: 4rem;
+    margin-top: 20px;
+    color: #3600a9;
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  .hero-papa-img {
+    height: 220px;
+    width: 250px;
+    border-radius: 20%;
+  }
+}
+
+/* for mobiles */
+@media screen and (max-width: 800px) {
+  .experience-div {
+    font-size: 18px;
+  }
+}
