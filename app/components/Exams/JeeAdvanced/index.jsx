@@ -9,7 +9,7 @@ const JeeAdvanced = () => {
           JEE Advanced 2024: Exam Date, Result, Eligiblity
         </div>
         <div>
-          <img className="jadv-logo" src={"/public/assets/ADVANCED.png"}></img>
+          <img className="jadv-logo" src={"assets/ADVANCED.png"}></img>
         </div>
 
         <div>

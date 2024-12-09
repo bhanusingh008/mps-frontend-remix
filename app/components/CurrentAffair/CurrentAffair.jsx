@@ -139,7 +139,7 @@ export const CurrentAffair = () => {
                 <div>
                   <img
                     style={{ width: "40px" }}
-                    src={"public/assets/quote-svgrepo-com.svg"}
+                    src={"assets/quote-svgrepo-com.svg"}
                   ></img>
                 </div>
                 <div>

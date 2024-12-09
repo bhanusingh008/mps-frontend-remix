@@ -52,16 +52,16 @@ const Footer = () => {
             <div className="connect-icon-ctn">
               <img
                 className="connect-icon"
-                src={"/public/assets/whatsapp.png"}
+                src={"assets/whatsapp.png"}
                 alt="whatsappIcon"
               ></img>
-              <img className="connect-icon" src={"/public/assets/call.svg"} alt="callIcon"></img>
+              <img className="connect-icon" src={"assets/call.svg"} alt="callIcon"></img>
               <span>9718942794, 8448203692</span>
             </div>
             <div className="connect-icon-ctn">
               <img
                 className="connect-icon"
-                src={"/public/assets/facebook.svg"}
+                src={"assets/facebook.svg"}
                 alt="facebookLogo"
               ></img>
               <span>

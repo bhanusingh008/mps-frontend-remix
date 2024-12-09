@@ -35,7 +35,7 @@ export const Notice = () => {
     <div className="notice-bg">
       <div className="notice-container">
         <div className="hero-papa-img-container">
-          <img src={"public/assets/pawan_sir.webp"} alt="Pawan Sir" loading="lazy" className="hero-papa-img"></img>
+          <img src={"assets/pawan_sir.webp"} alt="Pawan Sir" loading="lazy" className="hero-papa-img"></img>
         </div>
         <div className="notice-board">
           <div className="experience-div">

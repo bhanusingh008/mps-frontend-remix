@@ -9,7 +9,7 @@ const JeeMain = () => {
           JEE Main 2024 Exam: Exam Updates, Syllabus, Admit Card
         </div>
         <div>
-          <img className="jmain-logo" src={"/public/assets/NTA.png"}></img>
+          <img className="jmain-logo" src={"assets/NTA.png"}></img>
         </div>
 
         <div>

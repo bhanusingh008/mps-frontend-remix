@@ -48,7 +48,7 @@ export const Contact = () => {
       <div className="form-container">
         <form onSubmit={handleSubmit} className="contact-form">
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img style={{ width: "12rem" }} src="/public/assets/for_contact_form.gif"></img>
+            <img style={{ width: "12rem" }} src="assets/for_contact_form.gif"></img>
           </div>
           <label>Name:</label>
           <input
