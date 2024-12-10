@@ -11,6 +11,8 @@
 .mc-ctn-2 {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding-left: 2rem;
+padding-right: 2rem;
 }
 
 .mc-heading {
@@ -55,10 +57,10 @@
 }
 
 @media screen and (max-width: 640px) {
- .mc-ctn-2 {
-  display: flex;
-  flex-direction: column-reverse;
-}
+  .mc-ctn-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .mc-heading {
     font-size: 40px;
