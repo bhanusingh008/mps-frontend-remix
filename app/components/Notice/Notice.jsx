@@ -35,13 +35,20 @@ export const Notice = () => {
     <div className="notice-bg">
       <div className="notice-container">
         <div className="hero-papa-img-container">
-          <img src={"assets/pawan_sir.webp"} alt="Pawan Sir" loading="lazy" className="hero-papa-img"></img>
+          <img
+            src={"assets/pawan_sir.webp"}
+            alt="Pawan Sir"
+            loading="lazy"
+            className="hero-papa-img"
+          ></img>
         </div>
         <div className="notice-board">
           <div className="experience-div">
-            EX-VMC FARIDABAD – MATHS FACULTY<br></br>
-            (MENTOR OF TOP BATCHES FROM 2013 TO 2024) <br />A RESULT ORIENTED
-            FACULTY
+            With over 20 years of experience, Pawan Sir has mentored more than
+            4,000 students, guiding them to success in JEE exams. As an ex-VMC
+            Faridabad Maths faculty member and mentor of top batches from 2013
+            to 2024, he brings a wealth of knowledge and a result-orientated
+            approach to teaching.
           </div>
 
           <div className="veritcal-line"></div>

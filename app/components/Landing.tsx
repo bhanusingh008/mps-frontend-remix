@@ -2,6 +2,7 @@ import Home from "../components/Home/home";
 import { Result } from "../components/Result/Result";
 import { CurrentAffair } from "../components/CurrentAffair/CurrentAffair";
 import { Reach } from "../components/Reach/Reach";
+import MiddleContent from "./MiddleContent";
 
 // Remix Meta Function
 export const meta = () => {
@@ -35,6 +36,7 @@ export function Landing() {
       }}
     >
       <Home />
+      <MiddleContent/>
       <Result />
       <CurrentAffair />
       <Reach />

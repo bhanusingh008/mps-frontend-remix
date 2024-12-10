@@ -41,14 +41,22 @@ export const Contact = () => {
     <div className="contact-ctn">
       <div className="address-ctn">
         <div>
-          Address: SCF 92 FIRST FLOOR, Sector 17, Faridabad, Haryana 121002
+          Limited Seats Available! Enroll Today Don’t miss the chance to learn
+          from the best math coaching centre in Faridabad. Contact us now to
+          secure your spot!
         </div>
-        <div>Contact No: 9718942794</div>
+        <div>
+          Address: SCF 92 FIRST FLOOR, Sector 17, Faridabad, Haryana 121002
+          <div>Contact No: 9718942794</div>
+        </div>
       </div>
       <div className="form-container">
         <form onSubmit={handleSubmit} className="contact-form">
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img style={{ width: "12rem" }} src="assets/for_contact_form.gif"></img>
+            <img
+              style={{ width: "12rem" }}
+              src="assets/for_contact_form.gif"
+            ></img>
           </div>
           <label>Name:</label>
           <input

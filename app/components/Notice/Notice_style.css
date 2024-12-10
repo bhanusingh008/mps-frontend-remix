@@ -7,7 +7,7 @@
   background-color: #ebebeb;
   display: grid;
   grid-template-columns: 10fr 1fr 10fr;
-  font-size: 24px;
+  font-size: 22px;
   padding: 20px;
 }
 
@@ -53,6 +53,8 @@
 }
 
 .experience-div {
+display: flex;
+align-items: center;
   font-weight: bold;
 }
 

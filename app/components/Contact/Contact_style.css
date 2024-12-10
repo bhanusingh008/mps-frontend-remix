@@ -5,6 +5,9 @@
 }
 
 .address-ctn {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
   padding: 2rem;
   font-size: 24px;
 }

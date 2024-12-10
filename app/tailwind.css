@@ -2,25 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
-body{
-    display: flex; flex-direction: column; min-height: 100vh;
-    overflow-x: hidden;
-    height: 100%;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  height: 100%;
 }
 
-:root{
-    --background-color: #009BD6;
-    --foreground-color: #3600A9;
-    --text-color: black;
+:root {
+  --background-color: #009bd6;
+  --foreground-color: #3600a9;
+  --primary-color: #27007c;
+  --text-color: black;
 }
