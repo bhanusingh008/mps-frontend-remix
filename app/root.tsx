@@ -31,15 +31,33 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <meta
+          name="google-site-verification"
+          content="sIJiD0MdvPEx-5sOfSLagkFkubkYp5Ni4WtHuFOLqpo"
+        />
         <Meta />
         <Links />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PQ49XNT2N8"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-PQ49XNT2N8');
+            `,
+          }}
+        />
       </head>
       <body>
-        <Header/>
+        <Header />
         {children}
         <ScrollRestoration />
         <Scripts />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
