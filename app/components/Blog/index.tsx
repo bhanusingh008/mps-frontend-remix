@@ -1,39 +1,55 @@
-import { json } from "@remix-run/node"; // For server-side methods
-import { useLoaderData } from "@remix-run/react";
-import Parser from "rss-parser";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./Blogs.css";
 
-type BlogPost = {
+// Define the Blog type
+export interface Blog {
+  id: number;
   title: string;
-  link: string;
-};
-
-export async function loader() {
-  const parser = new Parser();
-  const feed = await parser.parseURL("https://mpsblog6.wordpress.com/feed/");
-  const posts = feed.items.map((item) => ({
-    title: item.title || "Untitled",
-    link: item.link || "#",
-  }));
-  return json(posts);
+  content: string;
+  image_path: string;
+  created_at: string;
 }
 
-const Blog = () => {
-  const posts = useLoaderData<BlogPost[]>();
+export const Blogs = () => {
+  const backend_url = import.meta.env.VITE_APP_BACKEND_URL;
+  const [blogs, setBlogs] = useState<Blog[]>([]); // Use the Blog type for state
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await axios.get(`${backend_url}/api/getBlogPosts`);
+        setBlogs(res.data.blogs); // Ensure data is cast correctly
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    load();
+  }, []);
 
   return (
-    <div className="main-blog-ctn">
-      <h1>Blog Posts</h1>
-      <ul>
-        {posts.map((post, index) => (
-          <li key={index}>
-            <a href={post.link} target="_blank" rel="noopener noreferrer">
-              {post.title}
-            </a>
-          </li>
+    <div className="blogs-container">
+      <h1>Blogs</h1>
+      <div className="tabs-container">
+        {blogs.map((blog) => (
+          <div className="tab" key={blog.id}>
+            <div className="tab-header">
+              <h2>{blog.title}</h2>
+            </div>
+            <div className="tab-body">
+              {blog.image_path && (
+                <img
+                  src={blog.image_path}
+                  alt={blog.title}
+                  className="blog-image"
+                />
+              )}
+              <p>{blog.content}</p>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
-
-export default Blog;

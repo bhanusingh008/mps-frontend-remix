@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import MpsBlog from "~/components/Blog/index";
+import { Blogs } from "~/components/Blog/index";
 
 export const meta: MetaFunction = () => {
   return [
@@ -18,6 +18,6 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <></>
+    <><Blogs/></>
   );
 }
