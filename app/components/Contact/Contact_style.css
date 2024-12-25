@@ -5,9 +5,9 @@
 }
 
 .address-ctn {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2rem;
   font-size: 24px;
 }
@@ -96,7 +96,13 @@ justify-content: space-between;
 
   .contact-ctn {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
+  }
+
+  .address-ctn {
+    padding: 1rem;
+    font-size: 18px;
   }
 }
 
