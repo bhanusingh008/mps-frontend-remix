@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .footer-content {
@@ -108,5 +108,11 @@
 
   .connect-icon {
     height: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    margin-bottom: 80px;
   }
 }
