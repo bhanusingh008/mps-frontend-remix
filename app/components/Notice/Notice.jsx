@@ -17,7 +17,7 @@ export const Notice = () => {
 
     const intervalExperience = setInterval(() => {
       setExperienceCount((prevCount) => {
-        if (prevCount >= 20) {
+        if (prevCount >= 21) {
           clearInterval(intervalExperience);
           return prevCount;
         }
@@ -35,20 +35,22 @@ export const Notice = () => {
     <div className="notice-bg">
       <div className="notice-container">
         <div className="hero-papa-img-container">
-          <img
-            src={"assets/pawan_sir.webp"}
-            alt="Pawan Sir"
-            loading="lazy"
-            className="hero-papa-img"
-          ></img>
+          <img src={"assets/pawan_sir.webp"} alt="Pawan Sir" loading="lazy" className="hero-papa-img"></img>
         </div>
         <div className="notice-board">
           <div className="experience-div">
-            With over 20 years of experience, Pawan Sir has mentored more than
-            4,000 students, guiding them to success in JEE exams. As an ex-VMC
-            Faridabad Maths faculty member and mentor of top batches from 2013
-            to 2024, he brings a wealth of knowledge and a result-orientated
-            approach to teaching.
+            <div className="pointer-row">
+              <img className="small-icon" src={"assets/star.svg"}></img>
+              <span>Produced 1500+ ranks in IIT JEE.</span>
+            </div>
+            <div className="pointer-row">
+              <img className="small-icon" src={"assets/star.svg"}></img>
+              <span>Mentored top batches of VMC Faridabad, Sector-16 from 2013 to 2024.</span>
+            </div>
+            <div className="pointer-row">
+              <img className="small-icon" src={"assets/star.svg"}></img>
+              <span>Know for his Result Oriented Style.</span>
+            </div>
           </div>
 
           <div className="veritcal-line"></div>
