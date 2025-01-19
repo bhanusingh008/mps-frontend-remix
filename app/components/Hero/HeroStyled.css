@@ -6,7 +6,6 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 120px;
 }
 
 .typing-text {
@@ -48,5 +47,10 @@
     font-size: 2rem;
     font-weight: bold;
     color: white;
+  }
+
+  .hero-bg {
+    background-color: #3600a9;
+    height: 450px;
   }
 }
