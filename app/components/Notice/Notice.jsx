@@ -41,7 +41,7 @@ export const Notice = () => {
           <div className="experience-div">
             <div className="pointer-row">
               <img className="small-icon" src={"assets/star.svg"}></img>
-              <span>{21}+ YEARS OF EXPERIENCE</span>
+              <span>{21}+ Years of Experience</span>
             </div>
             <div className="pointer-row">
               <img className="small-icon" src={"assets/star.svg"}></img>
