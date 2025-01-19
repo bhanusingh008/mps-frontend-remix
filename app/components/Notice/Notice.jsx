@@ -13,7 +13,7 @@ export const Notice = () => {
         }
         return prevCount + 1;
       });
-    }, 2);
+    }, 50);
 
     const intervalExperience = setInterval(() => {
       setExperienceCount((prevCount) => {
@@ -23,7 +23,7 @@ export const Notice = () => {
         }
         return prevCount + 1;
       });
-    }, 100);
+    }, 250);
 
     return () => {
       clearInterval(intervalStudent);
