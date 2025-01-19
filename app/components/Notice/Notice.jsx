@@ -41,7 +41,7 @@ export const Notice = () => {
           <div className="experience-div">
             <div className="pointer-row">
               <img className="small-icon" src={"assets/star.svg"}></img>
-              <span>Produced 1500+ ranks in IIT JEE.</span>
+              <span>{21}+ YEARS OF EXPERIENCE</span>
             </div>
             <div className="pointer-row">
               <img className="small-icon" src={"assets/star.svg"}></img>
@@ -57,8 +57,6 @@ export const Notice = () => {
 
           <div className="notice-meta-data">
             <div>
-              <div>{experienceCount}+ YEARS OF EXPERIENCE</div>
-
               <div className="student-mentored">
                 {studentsCount}+<br></br>
                 Students Mentored
