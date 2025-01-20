@@ -104,14 +104,20 @@
   }
 
   .hero-papa-img {
-    height: 220px;
-    width: 250px;
+    height: auto;
+    width: 40%;
     border-radius: 20%;
   }
 }
 
 /* for mobiles */
 @media screen and (max-width: 800px) {
+  .hero-papa-img {
+    height: auto;
+    max-width: 220px;
+    width: 60%;
+    border-radius: 100%;
+  }
   .experience-div {
     font-size: 18px;
   }
