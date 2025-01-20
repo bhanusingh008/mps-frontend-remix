@@ -35,7 +35,7 @@ const ExamsCards = () => {
         </div>
         <div className="exam-container">
           <div className="exam-cover-img">
-            <img style={{width:'100%' }} src={"assets/NTA.png"}></img>
+            <img style={{width:'100%' }} src={"/assets/NTA.png"}></img>
           </div>
           <div className="exam-title">JEE MAIN</div>
 

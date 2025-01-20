@@ -1,15 +1,16 @@
 import React from "react";
 import "./style.css";
+import styles from "../../Landing.module.css"
 
 const JeeMain = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center", margin: "2rem" }}>
-      <div className="jee-main-cnt">
+    <div className={styles.landingContainer} style={{ display: "flex", justifyContent: "center", margin: "2rem" }}>
+      <div className={`jee-main-cnt ${styles.mainContent}`}>
         <div className="jmain-title">
           JEE Main 2024 Exam: Exam Updates, Syllabus, Admit Card
         </div>
         <div>
-          <img className="jmain-logo" src={"assets/NTA.png"}></img>
+          <img className="jmain-logo" src={"/assets/NTA.png"}></img>
         </div>
 
         <div>

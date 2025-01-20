@@ -26,8 +26,8 @@ const MiddleContent: React.FunctionComponent = () => {
         </div>
         <div className="align-center">
           <svg
-            width="200px"
-            height="200px"
+            width="150px"
+            height="150px"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +75,8 @@ const MiddleContent: React.FunctionComponent = () => {
         </div>
         <div className="align-center">
           <svg
-            height="200px"
-            width="200px"
+            height="150px"
+            width="150px"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"

@@ -30,8 +30,8 @@
   justify-items: center;
 }
 
-.testimonial-padding{
-  padding:1rem;
+.testimonial-padding {
+  padding: 1rem;
 }
 
 .testimonial-container {
@@ -49,6 +49,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   align-content: center;
   justify-content: center;
   justify-items: center;
@@ -69,9 +70,9 @@
   background-color: #fff;
 }
 
-.exam-cover-img img{
+.exam-cover-img img {
   max-width: 350px;
-  padding:5%;
+  padding: 5%;
   height: 6rem;
 }
 
@@ -80,7 +81,7 @@
   font-size: 28px;
 }
 
-.exam-brief{
+.exam-brief {
   height: 41.5%;
   padding: 1rem;
 }
@@ -94,6 +95,8 @@
 }
 
 .see-review-btn {
+  display: flex;
+  align-items: center;
   background-color: #3600a9;
   border: solid #3600a9 0.5px;
   color: white;
@@ -159,10 +162,10 @@
     padding: 0.4rem;
   }
 
-  .testimonial-padding{
-    padding:0.5rem;
+  .testimonial-padding {
+    padding: 0.5rem;
   }
-  
+
   .add-review-btn {
     padding: 0.4rem;
   }

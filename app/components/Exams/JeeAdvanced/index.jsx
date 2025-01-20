@@ -1,15 +1,16 @@
 import React from "react";
 import "./style.css";
+import styles from "../../Landing.module.css"; 
 
 const JeeAdvanced = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center", margin: "2rem" }}>
-      <div className="jee-advanced-cnt">
+    <div className={styles.landingContainer} style={{ display: "flex", justifyContent: "center", margin: "2rem" }}>
+      <div className={`jee-advanced-cnt ${styles.mainContent}`}>
         <div className="jadv-title">
           JEE Advanced 2024: Exam Date, Result, Eligiblity
         </div>
         <div>
-          <img className="jadv-logo" src={"assets/ADVANCED.png"}></img>
+          <img className="jadv-logo" src={"/assets/ADVANCED.png"}></img>
         </div>
 
         <div>
