@@ -49,7 +49,7 @@ export const Notice = () => {
             </div>
             <div className="pointer-row">
               <img className="small-icon" src={"assets/star.svg"}></img>
-              <span>Know for his Result Oriented Style.</span>
+              <span>Known for his Result Oriented Style.</span>
             </div>
           </div>
 
