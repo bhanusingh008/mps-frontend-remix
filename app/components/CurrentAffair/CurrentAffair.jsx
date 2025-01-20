@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect } from "react";
+import styles from "../Landing.module.css"
+
 export const CurrentAffair = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -129,7 +131,7 @@ export const CurrentAffair = () => {
   // }, []);
 
   return (
-    <div className="current-container">
+    <div className={`current-container`}>
       <div className="current-heading">What Students Say</div>
       <div className="current-content">
         <Slider {...settings} className="slider">

@@ -38,7 +38,7 @@ export function Landing() {
       <div className={styles.fullWidthContent}>
         <Result />
       </div>
-      <div className={styles.mainContent}>
+      <div className={styles.fullWidthContent}>
         <CurrentAffair />
       </div>
     </div>
