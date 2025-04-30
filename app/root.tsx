@@ -1,10 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
@@ -32,16 +26,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-         <meta
-          name="google-site-verification"
-          content="sIJiD0MdvPEx-5sOfSLagkFkubkYp5Ni4WtHuFOLqpo"
-        />
+        <meta name="google-site-verification" content="sIJiD0MdvPEx-5sOfSLagkFkubkYp5Ni4WtHuFOLqpo" />
+        <meta name="description" content="Maths by Pawan Sir - Expert coaching for IIT JEE and other competitive exams. Join us for the best results!" />
+        <meta name="keywords" content="Maths, IIT JEE, Coaching, Competitive Exams, Faridabad" />
+        <meta property="og:title" content="Maths by Pawan Sir" />
+        <meta property="og:description" content="Expert coaching for IIT JEE and other competitive exams. Join us for the best results!" />
+        <meta property="og:image" content="/assets/pawan_sir.png" />
+        <meta property="og:url" content="https://mathsbypawansir.com" />
+        <meta name="twitter:card" content="summary_large_image" />
         <Meta />
         <Links />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-PQ49XNT2N8"
-        ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ49XNT2N8"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

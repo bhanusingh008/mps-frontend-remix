@@ -50,26 +50,14 @@ const Footer = () => {
           <div className="col">
             <div className="sub-title">Connect</div>
             <div className="connect-icon-ctn">
-              <img
-                className="connect-icon"
-                src={"/assets/whatsapp.png"}
-                alt="whatsappIcon"
-              ></img>
-              <img className="connect-icon" src={"/assets/call.svg"} alt="callIcon"></img>
+              <img className="connect-icon" src={"/assets/whatsapp.png"} alt="whatsappIcon"></img>
+              <img className="connect-icon" src={"/assets/call.svg"} alt="Call Icon" loading="lazy"></img>
               <span>9718942794, 8448203692</span>
             </div>
             <div className="connect-icon-ctn">
-              <img
-                className="connect-icon"
-                src={"/assets/facebook.svg"}
-                alt="facebookLogo"
-              ></img>
+              <img className="connect-icon" src={"/assets/facebook.svg"} alt="facebookLogo"></img>
               <span>
-                <a
-                  className="a-tag"
-                  href="https://www.facebook.com/profile.php?id=61556705023218"
-                  target="_blank"
-                >
+                <a className="a-tag" href="https://www.facebook.com/profile.php?id=61556705023218" target="_blank">
                   Facebook
                 </a>
               </span>
@@ -77,9 +65,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-copyright">
-        Copyright &copy; 2024 Maths By Pawan Sir - All Rights Reserved.
-      </div>
+      <div className="footer-copyright">Copyright &copy; 2024 Maths By Pawan Sir - All Rights Reserved.</div>
     </div>
   );
 };

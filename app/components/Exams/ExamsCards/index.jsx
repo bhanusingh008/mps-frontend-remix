@@ -9,7 +9,7 @@ const ExamsCards = () => {
       <div className="exams-container">
         <div className="exam-container">
           <div className="exam-cover-img">
-            <img src={"assets/ADVANCED.png"}></img>
+            <img src={"assets/ADVANCED.png"} alt="Advanced Exam Logo" loading="lazy"></img>
           </div>
           <div className="exam-title">JEE ADVANCED</div>
 
@@ -25,7 +25,7 @@ const ExamsCards = () => {
               <button
                 className="see-review-btn"
                 onClick={() => {
-                  nav("/exams/advanced")
+                  nav("/exams/advanced");
                 }}
               >
                 Details
@@ -35,7 +35,7 @@ const ExamsCards = () => {
         </div>
         <div className="exam-container">
           <div className="exam-cover-img">
-            <img style={{width:'100%' }} src={"/assets/NTA.png"}></img>
+            <img style={{ width: "100%" }} src={"/assets/NTA.png"}></img>
           </div>
           <div className="exam-title">JEE MAIN</div>
 
