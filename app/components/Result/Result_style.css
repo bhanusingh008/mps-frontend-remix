@@ -53,8 +53,9 @@
   box-shadow: 10px 20px 10px #cecece;
   padding: 20px;
   color: #fff;
-  /* border-radius: 10%; */
+  border-radius: 10%;
   font-weight: 900;
+  min-width: 240px;
 }
 
 .student-percentile {
@@ -118,5 +119,13 @@
 
   .result-title {
     font-size: 1.5rem;
+  }
+}
+
+/* for mobiles */
+@media screen and (max-width: 512px) {
+  .student-container {
+    width: 80%;
+    border-radius: 2%;
   }
 }

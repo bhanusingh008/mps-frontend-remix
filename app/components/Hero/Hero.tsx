@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./HeroStyled.css";
 
 const phrases = ["Easy", "Scoring", "Problems Solving with Precision"];
 
@@ -32,11 +31,11 @@ export const Hero = () => {
   }, [charIndex, isDeleting, index]);
 
   return (
-    <div className="hero-bg">
-      <div className="typing-text-ctn">
-        <h1 className="typing-text">
-          <span>Making Maths</span> <span className="highligh-text">{text}</span>
-          <span className="cursor">.</span>
+    <div className="w-full flex justify-center items-start bg-primary h-[40vh] max-h-[600px] relative">
+      <div className="w-full max-w-5xl flex mt-10">
+        <h1 className="w-full text-[2.1rem] font-bold text-white ml-2 mr-auto">
+          <span>Making Maths</span> <span className="text-accent">{text}</span>
+          <span className="inline-block w-[10px] bg-white animate-blink">.</span>
         </h1>
       </div>
     </div>

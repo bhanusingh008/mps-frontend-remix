@@ -1,44 +1,24 @@
 import React from "react";
-import Home from "../components/Home/home";
 import { Result } from "../components/Result/Result";
 import { CurrentAffair } from "../components/CurrentAffair/CurrentAffair";
 import { Reach } from "../components/Reach/Reach";
 import MiddleContent from "./MiddleContent";
 import { Hero } from "./Hero/Hero";
-import styles from "./Landing.module.css"; // Import CSS module
-
-// Remix Meta Function
-export const meta = () => {
-  return {
-    title: "Best Online Math Coaching Center | Tuition Classes in Faridabad | JEE MAIN | JEE ADVANCED | BITSAT",
-    description: "Welcome to Maths by Pawan Sir, your ultimate destination for the best maths teacher in Faridabad. Join us today for nurturing excellence!",
-    canonical: "https://www.mathsbypawansir.com/",
-  };
-};
-
-// Remix Links Function (if needed for styles or external resources)
-export const links = () => {
-  return [
-    {
-      rel: "canonical",
-      href: "https://www.mathsbypawansir.com/",
-    },
-  ];
-};
+import { Notice } from "./Notice/Notice";
 
 // Main Component
 export function Landing() {
   return (
-    <div className={styles.landingContainer}>
+    <div className="w-screen">
       <Hero />
-      <div className={styles.mainContent}>
-        <Home />
+      <div className="flex flex-col max-w-5xl mx-auto relative md:p-4">
+        <Notice />
         <MiddleContent />
       </div>
-      <div className={styles.fullWidthContent}>
+      <div className="flex flex-col w-screen mx-auto relative">
         <Result />
       </div>
-      <div className={styles.fullWidthContent}>
+      <div className="flex flex-col w-screen mx-auto relative">
         <CurrentAffair />
       </div>
     </div>

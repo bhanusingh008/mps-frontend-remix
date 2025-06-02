@@ -1,10 +1,11 @@
 import "./header_style.css";
 import { useNavigate } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const nav = useNavigate();
   const scrollDown = (pixels) => {
     window.scrollBy({
@@ -14,19 +15,26 @@ function Header() {
     });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="header">
-        <div className="logo-title-cnt" style={{cursor: 'pointer'}} onClick={() => {nav('/')}}>
+      <div className={`header${scrolled ? " glassy" : ""}`}>
+        <div
+          className="logo-title-cnt"
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            nav("/");
+          }}
+        >
           <div id="header-logo">
-            <svg
-              className="logo-svg"
-              width="70"
-              height="70"
-              viewBox="0 0 205 205"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg className="logo-svg" width="70" height="70" viewBox="0 0 205 205" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="205" height="205" fill="#3600A9" />
               <circle cx="102.5" cy="102.5" r="102.5" fill="#3600A9" />
               <path
@@ -53,34 +61,18 @@ function Header() {
 
         <div className="nav">
           <ul className="nav-list">
-            <button
-              id="contact-me-btn"
-              className="nav-link-style"
-              onClick={() => nav("/")}
-            >
+            <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/")}>
               Home
             </button>
-            <button
-              id="contact-me-btn"
-              className="nav-link-style"
-              onClick={() => nav("/exams")}
-            >
+            <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/exams")}>
               Exams
             </button>
 
-            <button
-              id="contact-me-btn"
-              className="nav-link-style"
-              onClick={() => nav("/about-us")}
-            >
+            <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/about-us")}>
               About Us
             </button>
 
-            <button
-              id="contact-me-btn"
-              className="nav-link-style"
-              onClick={() => nav("/contact")}
-            >
+            <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/contact")}>
               Contact
             </button>
           </ul>
