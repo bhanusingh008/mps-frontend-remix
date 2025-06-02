@@ -20,7 +20,7 @@ export const Notice = () => {
   }, []);
 
   return (
-    <div className="sticky max-w-[1200px] mt-[-170px] left-0">
+    <div className="sticky max-w-[1200px] mt-[-100px] sm:mt-[-170px] left-0">
       <div className="mt-4 grid grid-cols-1 md:grid-cols-[1fr_5fr] p-8 bg-white border border-gray-200 shadow-[0_20px_500px_12px_#dedede] rounded-2xl min-h-[240px] box-border">
         <div className="w-full items-center flex justify-center">
           <img src={"assets/pawan_sir.webp"} alt="Pawan Sir" loading="lazy" className="h-auto w-full max-w-[220px] rounded-full" />

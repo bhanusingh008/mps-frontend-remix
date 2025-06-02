@@ -11,7 +11,7 @@ export function Landing() {
   return (
     <div className="w-screen">
       <Hero />
-      <div className="flex flex-col max-w-5xl mx-auto relative md:p-4">
+      <div className="flex flex-col max-w-5xl mx-auto relative p-6 md:p-4">
         <Notice />
         <MiddleContent />
       </div>
