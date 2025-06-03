@@ -85,7 +85,7 @@ const MiddleContent: React.FunctionComponent = () => {
                         hover:scale-105 transition-transform duration-300 hover:text-white hover:bg-blue-500/90"
         >
           <div className="flex justify-center mb-4">
-            <img src="/assets/teacher.svg" className="w-[100px]"></img>
+            <img src="/assets/test.svg" className="w-[100px]"></img>
           </div>
           <div className="text-center font-bold">Regular Testing</div>
           <ul className="mt-4 space-y-2">
