@@ -64,9 +64,6 @@ function Header() {
             <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/")}>
               Home
             </button>
-            <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/exams")}>
-              Exams
-            </button>
 
             <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/about-us")}>
               About Us
@@ -74,6 +71,10 @@ function Header() {
 
             <button id="contact-me-btn" className="nav-link-style" onClick={() => nav("/contact")}>
               Contact
+            </button>
+
+            <button id="login-btn" className="nav-link-style" onClick={() => nav("/")}>
+              Log In
             </button>
           </ul>
         </div>
@@ -86,9 +87,6 @@ function Header() {
           <button className="ham-btn" onClick={() => nav("/")}>
             Home
           </button>
-          <button className="ham-btn" onClick={() => nav("/exams")}>
-            Exams
-          </button>
 
           <button className="ham-btn" onClick={() => nav("/about-us")}>
             About Us
@@ -96,6 +94,9 @@ function Header() {
 
           <button className="ham-btn" onClick={() => nav("/contact")}>
             Contact
+          </button>
+          <button id="login-btn" className="nav-link-style" onClick={() => nav("/")}>
+            Log In
           </button>
         </div>
       ) : (

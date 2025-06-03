@@ -33,7 +33,7 @@ export const meta: MetaFunction = () =>
 
 export default function Exams() {
   return (
-    <div>
+    <div className="min-h-[100vh] w-full flex flex-col items-center justify-center bg-gray-100 p-4">
       <Outlet />
     </div>
   );

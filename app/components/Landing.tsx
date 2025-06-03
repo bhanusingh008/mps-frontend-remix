@@ -1,7 +1,6 @@
 import React from "react";
 import { Result } from "../components/Result/Result";
 import { CurrentAffair } from "../components/CurrentAffair/CurrentAffair";
-import { Reach } from "../components/Reach/Reach";
 import MiddleContent from "./MiddleContent";
 import { Hero } from "./Hero/Hero";
 import { Notice } from "./Notice/Notice";
