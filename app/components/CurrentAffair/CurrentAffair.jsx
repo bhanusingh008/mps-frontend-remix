@@ -154,25 +154,25 @@ export const CurrentAffair = () => {
           ))}
         </Slider>
       </div>
-      <div className="flex justify-center items-center gap-8 mt-8 mb-4">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mt-8 mb-4">
         <div>
           <a
-            className="flex items-center bg-[#3600a9] border border-[#3600a9] text-white px-8 py-4 rounded-xl cursor-pointer font-bold no-underline hover:bg-[#5b33d6] md:px-4 md:py-2 sm:px-2 sm:py-2"
-            href="https://www.google.com/search?q=Maths+By+Pawan+Sir+%7C+EX-VMC+Maths+Faculty+%7C+Teaching+for+JEE+Mains+%26+Advance+%7C+Best+Maths+Coaching+in+Faridabad"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See All Reviews
-          </a>
-        </div>
-        <div>
-          <a
-            className="bg-white border border-[#3600a9] text-[#3600a9] px-8 py-4 rounded-xl cursor-pointer font-bold no-underline hover:bg-black/5 md:px-4 md:py-2 sm:px-2 sm:py-2"
+            className="min-w-[250px] flex items-center justify-center bg-white border border-[#3600a9] text-[#3600a9] px-8 py-4 rounded-xl cursor-pointer font-bold no-underline hover:bg-black/5 md:px-4 md:py-2 sm:px-2 sm:py-2"
             href="https://g.page/r/CVyX5oU2vN6EEBM/review"
             target="_blank"
             rel="noopener noreferrer"
           >
             Add Review
+          </a>
+        </div>
+        <div>
+          <a
+            className="min-w-[250px] flex items-center justify-center bg-[#3600a9] border border-[#3600a9] text-white px-8 py-4 rounded-xl cursor-pointer font-bold no-underline hover:bg-[#5b33d6] md:px-4 md:py-2 sm:px-2 sm:py-2"
+            href="https://www.google.com/search?q=Maths+By+Pawan+Sir+%7C+EX-VMC+Maths+Faculty+%7C+Teaching+for+JEE+Mains+%26+Advance+%7C+Best+Maths+Coaching+in+Faridabad"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See All Reviews
           </a>
         </div>
       </div>
