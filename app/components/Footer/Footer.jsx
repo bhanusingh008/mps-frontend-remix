@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="flex items-center gap-3 text-lg">
             <img src="/assets/whatsapp.png" alt="whatsappIcon" className="h-7 w-7" />
             <Phone className="w-6 h-6 text-green-400" aria-label="Call" />
-            <span>9718942794, 8448203692</span>
+            <span>9718942794</span>
           </div>
           <div className="flex items-center gap-3 text-lg">
             <Facebook className="w-6 h-6 text-blue-500" aria-label="Facebook" />
